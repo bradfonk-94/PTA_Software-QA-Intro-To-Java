@@ -11,14 +11,14 @@ public class MilkReciept1 {//the class name should be the same as the name of th
 	public static void main(String[] args) {
 	//Main Method inside the Receipt1 class
 		//You need to call all the methods in the main method which is the brain for the program to work
-		myInputMethod();
-		myCalculationMethod();
-		myOutputMethod();
+		InputMethod();
+		CalculationMethod();
+		OutputMethod();
 		
 	}
 	
 	//METHOD1
-	public static void myInputMethod() {//myInputMethod inside Receipt1 class
+	public static void InputMethod() {//InputMethod inside Receipt1 class
 		
 		//creating an object from the scanner class so we can access the methods and properties of the class
 		Scanner scannerObject = new Scanner(System.in);
@@ -31,24 +31,24 @@ public class MilkReciept1 {//the class name should be the same as the name of th
 				   //As such we made use of the scannerObject to access a method called nextInt() whose function is to accept user
 				   //input and store it in an integer variable called milkQuantity
 				   milkQuantity=scannerObject.nextInt();
-	}//myInputMethod() ENDS----------------------------------------
+	}//InputMethod() ENDS----------------------------------------
 	
 	
 	//METHOD2
-	public static void myCalculationMethod() {//myCalculationMethod inside Receipt1 class
+	public static void CalculationMethod() {//CalculationMethod inside Receipt1 class
 		cSubTotal=milkQuantity*milkPrice;
 		cTax=cSubTotal*Tax;
 		cTotal=cSubTotal+cTax;
 	
-	}//myCalculationMethod() ENDS-----------------------------------
+	}//CalculationMethod() ENDS-----------------------------------
 	
 	//METHOD3
-	public static void myOutputMethod() {//Remember System.out.println is used to display value or info on the console
+	public static void OutputMethod() {//Remember System.out.println is used to display value or info on the console
 		System.out.println("Milk Quantity............:"+milkQuantity);
 		System.out.println("Subtotal.................:"+cSubTotal);
 		System.out.println("Tax......................:"+cTax);
 		System.out.println("Total....................:"+cTotal);
-	}//myOutputMethod() ENDS----------------------------------------
+	}//OutputMethod() ENDS----------------------------------------
 	
 	
 	
